@@ -1,9 +1,12 @@
-winsw: Windows service wrapper in less restrictive license
-=========================
+# winsw: Windows service wrapper in less restrictive license
 
-[![Github All Releases](https://img.shields.io/github/downloads/kohsuke/winsw/total.svg)](https://github.com/kohsuke/winsw/releases)
-[![NuGet](https://img.shields.io/nuget/v/WinSW.svg)](https://www.nuget.org/packages/WinSW/)
-[![Build status](https://ci.appveyor.com/api/projects/status/i94752yal9iy77in?svg=true)](https://ci.appveyor.com/project/oleg-nenashev/winsw)
+[![Github All Releases](https://img.shields.io/github/downloads/ankobi/winsw/total.svg)](https://github.com/kohsuke/winsw/releases)
+
+Forked from [kohsuke/winsw](https://github.com/kohsuke/winsw). The original version was available for .NET Frameworks `2.0` and `4.0` as targets, which was not suitable for my use case. This version was build with .NET Frameworks `4.5.2`.
+
+I removed all executable signing and "cleaned" up the solution to my needs, removing the additional .NET `4.0` project and updating the existing projects to `4.5.2`.
+
+# Original readme from kohsuke/winsw
 
 WinSW is an executable binary, which can be used to wrap and manage a custom process as a Windows service.
 Once you download the installation package, you can rename `winsw.exe` to any name, e.g. `myService.exe`.
