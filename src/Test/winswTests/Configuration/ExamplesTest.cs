@@ -43,8 +43,9 @@ namespace winswTests.Configuration
             ServiceDescriptorAssert.AssertAllOptionalPropertiesAreDefault(d);
         }
 
-        private ServiceDescriptor doLoad(string exampleName) {
-            var dir = Directory.GetCurrentDirectory();
+        private ServiceDescriptor doLoad(string exampleName)
+        {
+            var dir = AppDomain.CurrentDomain.BaseDirectory;
             string path = dir + "\\..\\..\\..\\..\\..\\examples\\sample-" + exampleName + ".xml";
             if (!File.Exists(path))
             {

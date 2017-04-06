@@ -52,7 +52,6 @@ namespace winswTests
         }
 
         [Test]
-        [ExpectedException(typeof(System.ArgumentException))]
         public void IncorrectStartMode()
         {
             const string SeedXml = "<service>"
@@ -76,7 +75,7 @@ namespace winswTests
                                    + "</service>";
 
             _extendedServiceDescriptor = ServiceDescriptor.FromXML(SeedXml);
-            Assert.That(_extendedServiceDescriptor.StartMode, Is.EqualTo(StartMode.Manual));
+            Assert.That(() => _extendedServiceDescriptor.StartMode, Throws.TypeOf<ArgumentException>());
         }
 
         [Test]
