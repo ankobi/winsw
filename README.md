@@ -1,9 +1,9 @@
-# winsw: Windows service wrapper in less restrictive license
+# WinSWAG: **Win**dows **s**ervice **w**rapper (**a**nother **g**eneration).
 
-[![Github All Releases](https://img.shields.io/github/downloads/ankobi/winsw/total.svg)](https://github.com/kohsuke/winsw/releases)
+[![Github All Releases](https://img.shields.io/github/downloads/ankobi/winswag/total.svg)](https://github.com/ankobi/winswag/releases)
 
-WinSW is an executable binary, which can be used to wrap and manage a custom process as a Windows service.
-Once you download the installation package, you can rename `winsw.exe` to any name, e.g. `myService.exe`.
+WinSWAG is an executable binary, which can be used to wrap and manage a custom process as a Windows service.
+Once you download the installation package, you can rename `WinSWAG.exe` to any name, e.g. `myService.exe`.
 
 Forked from [kohsuke/winsw](https://github.com/kohsuke/winsw). The original version was available for .NET Frameworks `2.0` and `4.0` as targets, which was not suitable for my use case. This version was build with .NET Frameworks `4.5.2`.
 
@@ -13,7 +13,7 @@ I removed all executable signing and "cleaned" up the solution to my needs, remo
 
 WinSW is being managed by configuration files: [Main XML Configuration file](doc/xmlConfigFile.md) and [EXE Config file](doc/exeConfigFile.md).
 
-Your renamed `winsw.exe` binary also accepts the following commands:
+Your renamed `WinSWAG.exe` binary also accepts the following commands:
 
 * `install` to install the service to Windows Service Controller.
   This command requires some preliminary steps described in the [Installation Guide](doc/installation.md).
