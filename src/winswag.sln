@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinSwag", "Core\ServiceWrapper\WinSwag.csproj", "{0DE77F55-ADE5-43C1-999A-0BC81153B039}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinSWAG", "Core\ServiceWrapper\WinSWAG.csproj", "{0DE77F55-ADE5-43C1-999A-0BC81153B039}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winswTests", "Test\winswTests\winswTests.csproj", "{93843402-842B-44B4-B303-AEE829BE0B43}"
 EndProject

@@ -73,9 +73,9 @@
     <Compile Include="Util\ServiceDescriptorAssert.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\ServiceWrapper\WinSwag.csproj">
+    <ProjectReference Include="..\..\Core\ServiceWrapper\WinSWAG.csproj">
       <Project>{0DE77F55-ADE5-43C1-999A-0BC81153B039}</Project>
-      <Name>WinSwag</Name>
+      <Name>WinSWAG</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Core\WinSWCore\WinSWCore.csproj">
       <Project>{9d0c63e2-b6ff-4a85-bd36-b3e5d7f27d06}</Project>
