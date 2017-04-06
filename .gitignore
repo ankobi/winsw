@@ -2,8 +2,4 @@ bin
 obj
 *.suo
 *.user
-/eval
-/src/packages/
-/winsw_key.snk
-/winsw_key.pfx
 /src/packages
