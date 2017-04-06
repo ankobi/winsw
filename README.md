@@ -2,29 +2,12 @@
 
 [![Github All Releases](https://img.shields.io/github/downloads/ankobi/winsw/total.svg)](https://github.com/kohsuke/winsw/releases)
 
-Forked from [kohsuke/winsw](https://github.com/kohsuke/winsw). The original version was available for .NET Frameworks `2.0` and `4.0` as targets, which was not suitable for my use case. This version was build with .NET Frameworks `4.5.2`.
-
-I removed all executable signing and "cleaned" up the solution to my needs, removing the additional .NET `4.0` project and updating the existing projects to `4.5.2`.
-
-# Original readme from kohsuke/winsw
-
 WinSW is an executable binary, which can be used to wrap and manage a custom process as a Windows service.
 Once you download the installation package, you can rename `winsw.exe` to any name, e.g. `myService.exe`.
 
-### Why?
+Forked from [kohsuke/winsw](https://github.com/kohsuke/winsw). The original version was available for .NET Frameworks `2.0` and `4.0` as targets, which was not suitable for my use case. This version was build with .NET Frameworks `4.5.2`.
 
-See the [project manifest](MANIFEST.md).
-
-### Download
-
-Starting from WinSW `2.x`, the releases are being hosted on [GitHub](https://github.com/kohsuke/winsw/releases) and [nuget.org](https://www.nuget.org/packages/WinSW/).
-
-Due to historical reasons, the project also uses  [Jenkins Maven repository](https://jenkins.io/index.html)  as a secondary source. 
-Binaries are available [here](http://repo.jenkins-ci.org/releases/com/sun/winsw/winsw/). 
-
-The executables in all sources are [strong-named assemblies](https://msdn.microsoft.com/en-us/library/wd40t7ad%28v=vs.110%29.aspx), which are being singed by randomly generated keys.
-Do not rely on such strong names for security (as well as on other strong names as it recommended by Microsoft). 
-They provide a unique identity only.
+I removed all executable signing and "cleaned" up the solution to my needs, removing the additional .NET `4.0` project and updating the existing projects to `4.5.2`.
 
 ### Usage
 
@@ -44,21 +27,6 @@ Your renamed `winsw.exe` binary also accepts the following commands:
  * `Started` to indicate the service is currently running
  * `Stopped` to indicate that the service is installed but not currently running.
 
-### Supported .NET versions
-
-#### WinSW 2.x
-
-WinSW `2.x` offers two executables, which declare .NET Frameworks `2.0` and `4.0` as targets.
-More executables can be added on-demand.
-Please create an issue if you need such executables.
-
-#### WinSW 1.x
-
-WinSW `1.x` Executable is being built with a .NET Framework `2.0` target, and by defaut it will work only for .NET Framework versions below `3.5`.
-On the other hand, the code is known to be compatible with .NET Framework `4.0` and above.
-It is possible to declare the support of this framework via the `exe.config` file.
-See the [Installation Guide](doc/installation.md) for more details.
-
 ### Documentation
 
 * [Installation Guide](doc/installation.md) - Describes the installation process for different systems and .NET versions
@@ -73,33 +41,3 @@ See the [Installation Guide](doc/installation.md) for more details.
  * [Deferred File Operations](doc/deferredFileOperations.md)
 * Configuration Management:
  * [Puppet Forge Module](doc/puppetWinSW.md)
-
-### Release lines
-
-#### WinSW 2.x
-
-This is a new baseline of WinSW with several major changes:
-* Major documentation rework and update
-* New executable package targeting the .NET Framework `4.0`. .NET Framework `2.0` is still supported.
-* [Extension engine](doc/extensions/extensions.md), which allows extending the wrapper's behavior. And a couple of extensions for it (Shared Directory Mapper, Runaway Process Killer)
-* New release hosting: GitHub and NuGet
-* Migration of the logging subsystem to Apache log4net
-* Bugfixes
-
-See the full changelog in the [release notes](CHANGELOG.md#20).
-
-The version `2.x` is **fully compatible** with the `1.x` configuration file format, 
-  hence the upgrade procedure just requires replacement of the executable file.
-
-#### WinSW 1.x
-
-This is an old baseline of WinSW.
-Currently it is in the maintenance-only state.
-New versions with fixes may be released on-demand.
-
-### Build Environment
-
-* IDE: [Visual Studio Community 2013](http://www.visualstudio.com/en-us/news/vs2013-community-vs.aspx) (free for open-source projects)
-* `winsw_key.snk` should be available in the project's root in order to build the executable
- * You can generate the certificate in "Project Settings/Signing"
- * The certificate is in <code>.gitignore</code> list. Please do not add it to the repository
