@@ -32,12 +32,12 @@ Your renamed `WinSWAG.exe` binary also accepts the following commands:
 * [Installation Guide](doc/installation.md) - Describes the installation process for different systems and .NET versions
 * [Release notes](CHANGELOG.md)
 * Configuration:
-* * [Main XML Configuration file](doc/xmlConfigFile.md)
-* * [EXE Configuration File](doc/exeConfigFile.md)
-* * [Logging and Error Reporting](doc/loggingAndErrorReporting.md)
-* * [Extensions](doc/extensions/extensions.md)
+  * [Main XML Configuration file](doc/xmlConfigFile.md)
+  * [EXE Configuration File](doc/exeConfigFile.md)
+  * [Logging and Error Reporting](doc/loggingAndErrorReporting.md)
+  * [Extensions](doc/extensions/extensions.md)
 * Use-cases:
-* * [Self-restarting services](doc/selfRestartingService.md)
-* * [Deferred File Operations](doc/deferredFileOperations.md)
+  * [Self-restarting services](doc/selfRestartingService.md)
+  * [Deferred File Operations](doc/deferredFileOperations.md)
 * Configuration Management:
-* * [Puppet Forge Module](doc/puppetWinSW.md)
+  * [Puppet Forge Module](doc/puppetWinSW.md)
